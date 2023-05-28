@@ -17,3 +17,4 @@
 - h4, h5, h6: Tương ứng cho những tiêu đề nhỏ hơn
 - _Thẻ a_: là thẻ inline, chắc chắn là dùng cho liên kết, nó có 3 thuộc tính hay dùng `href` , `target`, và `rel`
 - Khi dùng target có giá trị là _blank thì thẻ a nên thêm thuộc tính `rel="noopener noreferrer"`
+- 

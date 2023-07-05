@@ -16,5 +16,57 @@
 - h3: Dùng được nhiều, thường được dùng cho những block nhỏ
 - h4, h5, h6: Tương ứng cho những tiêu đề nhỏ hơn
 - _Thẻ a_: là thẻ inline, chắc chắn là dùng cho liên kết, nó có 3 thuộc tính hay dùng `href` , `target`, và `rel`
-- Khi dùng target có giá trị là _blank thì thẻ a nên thêm thuộc tính `rel="noopener noreferrer"`
-- 
+- Khi dùng `target` có giá trị là `_blank` thì thẻ a nên thêm thuộc tính `rel="noopener noreferrer"`
+- Font chữ:
+- 1. Sẽ có sẵn ở Google Fonts
+- 2. Không có ở Google Fonts mà được mua, tải trên mạng về máy
+- _font-weight_: Độ đậm nhạt của chữ, 100 -> 900, normal, bold, bolder, extra-bold, light, thin, regular, medium, semibold
+- _font-family_: Thiết lập font chữ, truyền vào là font name(tên của font chữ)
+- `sans-serif`: Chữ không có chân
+- `serif`: Chữ có chân
+- CSS Selectors: tag, class, id, attribute
+- Tags: h1, h2, h3, div, body, span, a
+- Class: .name, .tour, .tour-header
+- Id: #header, #content
+- Attribute: Later ``
+-  Special selector: \* > ~ +
+- Cấu trúc 1 đoạn code CSS
+cssSelectors, cssSelectors, cssSelectors {
+    property: value;
+}
+h1, .name, #header, input[type='email'] {
+    font-family: 'Inter';
+}
+- _User Agent Stylesheet_: CSS mặc định của trình duyệt, mỗi trình duyệt sẽ có CSS mặc định khác nhau
+- _CSS reset_: Dùng để reset CSS mặc định của các trình duyệt, và bắt buộc phải có đầu tiên
+- _color_: Màu chữ
+- _background-color_: Màu nền
+- _Mã màu_: hexa(#ffa400), orange, rgb(0,0,0), rgba(0,0,0,0.5)
+- _Alpha_(opacity): 0 -> 1
+- **box-sizing**: margin, padding, border, width, height, đơn vị px
+- _content-box_: Độ rộng lúc này của 1 khối sẽ bằng width + padding(left+right) + border(left+right)
+- border-box: Độ rộng lúc này của 1 khối sẽ bao gồm padding và border, nên áp dụng cho toàn bộ selector(\*)
+- _width_: Độ rộng
+- _height_: Chiều cao
+- _border_: Viền
+- _shorthand_: (CSS shorthand) Viết rút gọn
+- _padding_: Không thể dùng số âm
+- _margin_: Có thể dùng số âm, có giá trị `auto`
+- _text-decoration_: Gạch dưới của thẻ a, `none`, `underline`, `overline`, `line-through`
+- _border-radius_: Độ bo góc của khối, càng lớn thì càng bo góc, nếu hình vuông mà có bo góc lớn hơn thì sẽ tạo ra hình tròn, còn nếu là hình chữ nhật có bo góc lớn thì sẽ tạo ra hình elip
+- _border-top-left-radius_, _border-top-right-radius_, _border-bottom-left-radius_, _border-bottom-right-radius_
+- _line-height_: Khoảng cách giữa các dòng chữ
+- Đơn vị: px, em, rem, vw, vh, %
+- Khi những thẻ inline nằm cạnh nhau thì nó sẽ nằm trên 1 hàng, ngược lại những thẻ block thì nó sẽ tạo ra hàng mới.
+- display: block, inline, inline-block, none, flex, grid
+- `block`: biến thành thẻ block
+- `inlinne`: biến thành thẻ inline, nó sẽ bị hạn chế vài thuộc tính CSS liên quan tới box-sizing như là padding-top, padding-bottom
+- `inline-block`: biến thành thẻ inline-block, là sự kết hợp giữa inline và block, khi các thẻ có thuộc tính inline-block nó sẽ kế thừa đặc tính của inline tức là nằm cạnh nhau thì sẽ nằm trên 1 hàng, có độ rộng bằng nội dung mà nó chứa, không bị hạn chế CSS
+- `none`: Ẩn luôn, ko thấy ko nhấn được
+- `flex`: Dùng rất nhiều hiện nay, nếu master được nó thì code layout vô tư :D
+- _min-width_: Độ rộng tối thiểu, ví dụ 100px -> >= 100px
+- _max-width_: Độ rộng tối đa, ví dụ 100px -> <= 100px
+- _flexbox_: Áp dụng thuộc tính display: flex vào phần tử mình muốn dàn layout
+- _calc_: Hàm dùng để tính toán, + - \* /, lưu ý là có phải có khoảng cách giữa các phép tính
+- _component_: Mục đích là tái sử dụng và có thể tuỳ chỉnh 1 chỗ để sử dụng nhiều nơi
+- _pug_: 

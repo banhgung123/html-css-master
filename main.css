@@ -12,6 +12,7 @@ body {
   background-color: white;
   border-radius: 10px;
   margin-left: 30px;
+  margin-bottom: 30px;
   width: calc(33.33% - 30px);
 }
 .tour-content {
@@ -28,6 +29,16 @@ body {
 }
 .tour-rating {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tour-review {
+  display: flex;
+  align-items: center;
+}
+.tour-review-count {
+  margin-left: 11px;
 }
 .tour-duration,
 .tour-review-count {
@@ -63,5 +74,5 @@ body {
   display: flex;
   /* flex-direction: row; */
   align-items: stretch;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }

@@ -69,4 +69,7 @@ h1, .name, #header, input[type='email'] {
 - _flexbox_: Áp dụng thuộc tính display: flex vào phần tử mình muốn dàn layout
 - _calc_: Hàm dùng để tính toán, + - \* /, lưu ý là có phải có khoảng cách giữa các phép tính
 - _component_: Mục đích là tái sử dụng và có thể tuỳ chỉnh 1 chỗ để sử dụng nhiều nơi
-- _pug_: 
+- _pug_: https://pugjs.org/api/getting-started.html
+- _sass_:
+- _javascript_:
+- _position_:

@@ -70,6 +70,10 @@ h1, .name, #header, input[type='email'] {
 - _calc_: Hàm dùng để tính toán, + - \* /, lưu ý là có phải có khoảng cách giữa các phép tính
 - _component_: Mục đích là tái sử dụng và có thể tuỳ chỉnh 1 chỗ để sử dụng nhiều nơi
 - _pug_: https://pugjs.org/api/getting-started.html
+- mixins:  Giống function trong Javascript, mục đích là tái sử dụng code
+- Biến: =, #{biến}
+- _position_: có 5 giá trị chính: static, relative, absolute, sticky, fixed, khi sử dụng thuộc tính position này thì đi kèm sẽ có các thuộc tính khác như top right bottom left z-index
+- _relative_: khi sử dụng giá trị này thì phải xem phần tử con của nó có sử dụng position là `absolute` hay không?
+- _absolute_: khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó gần nhất có sử dụng position là absolute hay relative không?
 - _sass_:
 - _javascript_:
-- _position_:

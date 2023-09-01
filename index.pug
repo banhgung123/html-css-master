@@ -1,3 +1,5 @@
+include ./pug/mixins
+
 doctype html
 html(lang="en")
   head
@@ -10,4 +12,8 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="main.css")
   body
-    .tour-list-container 
+    .tour-list-container
+      .tour-list
+        +tourItem('https://images.unsplash.com/photo-1683009427692-8a28348b0965?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80', 'From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 20, '9 hours', 55)
+        +tourItem('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80', 'From $60', 'FLoating Markets Day Trip from Bangkok', 4.5, 30, '15 hours', 88)
+        +tourItem('https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80', 'From $60', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.5, 30, '15 hours', 88)

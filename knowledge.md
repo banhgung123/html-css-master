@@ -75,5 +75,14 @@ h1, .name, #header, input[type='email'] {
 - _position_: có 5 giá trị chính: static, relative, absolute, sticky, fixed, khi sử dụng thuộc tính position này thì đi kèm sẽ có các thuộc tính khác như top right bottom left z-index
 - _relative_: khi sử dụng giá trị này thì phải xem phần tử con của nó có sử dụng position là `absolute` hay không?
 - _absolute_: khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó gần nhất có sử dụng position là absolute hay relative không?
+- _responsive_:
+- _breakpoints_: 320px 480px 768px 1024px 1200 1366 1440 1600 1920
+- _min-width_: breakpoints
+- _max-width_: breakpoints - 0.2px
+- _media queries_:
+- _transform_: translate(translateX(value), translateY(value)),  skew(skewX, skewY), rotate(rotateX, Y, Z), scale(X, Y)
+- `translateX`:  Nếu giá trị là số dương thì nó sẽ di chuyển qua bên phải, ngược lại thì di chuyển qua bên trái
+- `translateY`: Nếu giá trị nó là số dương thì nó đi xuống, ngược lại nó sẽ đi lên
+- `value`: 10px, 20px, -15px, -30px, 10%, lưu ý khi sử dụng % thì % ở đây chính là độ rộng hoặc chiều cao của khối chúng ta đang áp dụng thuộc tính transform và hàm translate
 - _sass_:
 - _javascript_:

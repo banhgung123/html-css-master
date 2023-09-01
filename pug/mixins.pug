@@ -15,3 +15,16 @@ mixin tourItem(image, price, title, review,reviewCount, duration, tourPrice)
         .tour-duration Duration: #{duration}
       a.tour-button(target='_blank', rel='noopener noreferrer')
         | Tours Price $#{tourPrice}
+
+mixin popularItem
+  .popular-item
+    .popular-image
+      .popular-overlay
+      img(src="https://images.unsplash.com/photo-1682686581663-179efad3cd2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80", alt="unsplash").popular-img
+      span.popular-label Must See
+    .popular-content
+      span.popular-time Sep 28 10:00 AM - 1:00 PM
+      h3.popular-title The Grand Palace
+      .popular-review
+        img(src="/images/star.png", alt="star")
+        span 4.8 (12 reviews)

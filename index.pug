@@ -1,19 +1,13 @@
-include ./pug/mixins
-
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title HTML CSS Master
-    link(rel="preconnect" href="https://fonts.googleapis.com")
-    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet")
-    link(rel="stylesheet" href="main.css")
-  body
-    .tour-list-container
-      .tour-list
-        +tourItem('https://images.unsplash.com/photo-1683009427692-8a28348b0965?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80', 'From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 20, '9 hours', 55)
-        +tourItem('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80', 'From $60', 'FLoating Markets Day Trip from Bangkok', 4.5, 30, '15 hours', 88)
-        +tourItem('https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80', 'From $60', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.5, 30, '15 hours', 88)
+extends ./views/layout/layout-tour
+block vars
+  - var title = 'Homepage';
+append head
+  link(rel="stylesheet" href="./css/main.css")
+block main
+  main
+    include ./views/home/TopTours
+    include ./views/home/Popular
+    include ./views/home/Gem
+    include ./views/home/Diamond
+    include ./views/home/Grid
+    include ./views/home/Study

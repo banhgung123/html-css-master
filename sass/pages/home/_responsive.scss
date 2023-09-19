@@ -1,0 +1,74 @@
+@media screen and (width >= 768px) {
+  .footer-column:first-child {
+    max-width: 268px;
+  }
+}
+@media screen and (width <= 767.98px) {
+  .gem-list {
+    grid-template-rows: 100px 100px 70px;
+    gap: 20px;
+  }
+  .popular-list {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .tour {
+    &-title {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    &-button,
+    &-rating {
+      font-size: 12px;
+    }
+    &-content {
+      padding: 17px 17px 9px;
+    }
+    &-image {
+      height: 211px;
+    }
+  }
+  .diamond {
+    padding: 30px 0;
+    &-list {
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+      grid-auto-flow: row;
+      grid-auto-rows: 148px;
+      gap: 16px;
+    }
+    &-item {
+      padding: 8px;
+    }
+    &-all {
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 16px;
+      padding: 4px 20px;
+    }
+  }
+  .footer {
+    padding: 30px 0;
+    &-top {
+      padding-bottom: 30px;
+    }
+    &-bottom,
+    &-columns {
+      flex-direction: column;
+    }
+    &-columns {
+      gap: 40px;
+    }
+  }
+}
+@media screen and (768px <= width <= 1023.98px) {
+  .popular-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tour-list {
+    --columns: 2;
+  }
+}

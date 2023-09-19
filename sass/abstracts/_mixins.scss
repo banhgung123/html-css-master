@@ -1,0 +1,49 @@
+// @mixin mixin-name($parameter, ...){property: $parameter}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin circle() {
+  border-radius: 100rem;
+}
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+@mixin flex($align-items: flex-start, $justify-content: flex-start, $gap: 0, $flex-direction: row, $flex-wrap: nowrap) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+}
+@mixin flexOptimized($options) {
+  display: flex;
+  align-items: map-get($options, ai);
+  justify-content: map-get($options, jc);
+  gap: map-get($options, gap);
+  flex-direction: map-get($options, fd);
+  flex-wrap: map-get($options, fw);
+}
+@mixin minWidth($breakpoint: 0) {
+  @if $breakpoint != 0 {
+    @media screen and (width >= $breakpoint) {
+      @content;
+    }
+  }
+}
+@mixin maxWidth($breakpoint) {
+  @media screen and (width <= $breakpoint) {
+    @content;
+  }
+}
+@mixin minMax($min, $max) {
+  @media screen and ($min <= width <= $max) {
+    @content;
+  }
+}

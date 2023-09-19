@@ -1,0 +1,21 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './base/reset';
+@import './base/general';
+
+@import './components/button';
+@import './components/typography';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/home';
+/* Variables
+--primary-color: orange;
+--secondary-color: blue;
+--text-color: red;
+--font-size-sm: 16px;
+Sử dụng
+var(--font-size-sm)
+*/
